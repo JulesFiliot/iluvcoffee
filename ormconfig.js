@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 module.exports = {
 	type: 'postgres',
-	host: 'localhost',
+	host: '192.168.0.22',
 	port: 5432,
 	username: 'postgres',
 	password: 'pass123',
