@@ -62,7 +62,7 @@ describe('CoffeesService', () => {
 				} catch (err) {
 					console.log('the error', err);
 					expect(err).toBeInstanceOf(NotFoundException);
-					expect(err.response.message).toEqual(`Coffee #${coffeeId} not found`);
+					expect(err.message).toEqual(`Coffee #${coffeeId} not found`);
 				}
 			});
 		});
