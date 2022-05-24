@@ -18,7 +18,6 @@ export class CoffeesController {
 	@Get()
 	findAll(@Protocol() protocol: string, @Query() paginationQuery: PaginationQueryDto) {
 		// const { limit, offset } = paginationQuery;
-		console.log('test', { protocol });
 		return this.coffeesService.findAll(paginationQuery);
 	}
 
